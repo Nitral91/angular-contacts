@@ -6,9 +6,7 @@
 body {
     background-color: $grey;
 
-    font-size: 12px;
+    font-size: $baseSize;
     line-height: 1.2;
     font-family: 'Roboto', Arial, sans-serif;
-
-    box-sizing: border-box;
 }

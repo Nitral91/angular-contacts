@@ -1,3 +1,5 @@
+@import "../../../../variables.scss";
+
 .contacts-header__wrapper {
     display: flex;
     position: relative;
@@ -9,12 +11,12 @@
         right: 24px;
         top: calc(100% - 3px);
         height: 3px;
-        background-color: #D7D7D7;
+        background-color: $headerUnderlineBg;
     }
 }
 
 .contacts-header__title {
-    font-size: 22px;
+    font-size: $titleSize;
     line-height: 2;
     font-weight: bold;
     text-transform: uppercase;

@@ -5,10 +5,21 @@
   display: block;
   margin: 0 auto;
   width: 1395px;
+  max-width: calc(100% - 10px);
   border: 1px;
   border-color: $grey;
   background-color: $white;
   padding: 41px 51px 38px;
+  box-sizing: border-box;
+
+  @media (max-width: 1140px) {
+    padding: 20px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 20px 10px;
+  }
+
 }
 
 .paginator-block__list {
@@ -25,7 +36,7 @@
   height: 26px;
   width: 26px;
   border-radius: 50%;
-  border: 2px #6E767D solid;
+  border: 2px $paginationColor solid;
   margin: 0 8px;
   transition: .2s ease-in-out;
   &:after {
@@ -34,15 +45,15 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 14px;
+    font-size: $mediumSize;
     font-weight: bold;
-    color: #6E767D;
+    color: $paginationColor;
     transition: .2s ease-in-out;
   }
   &.active {
-    border-color: #ED1C24;
+    border-color: $paginationActiveColor;
     &:after {
-      color: #ED1C24;
+      color: $paginationActiveColor;
     }
   }
   &.next {
@@ -77,10 +88,10 @@
   &:not(.active) {
     &:hover, &:focus {
       cursor: pointer;
-      background-color: #6E767D;
-      border: 2px #fff solid;
+      background-color: $paginationHover;
+      border: 2px $white solid;
       &:after {
-        color: #fff;
+        color: $white;
       }
     }
   }
