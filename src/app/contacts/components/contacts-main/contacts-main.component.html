@@ -1,11 +1,16 @@
 <app-contacts-header></app-contacts-header>
 <div class="contacts-main__wrapper">
 	<app-contacts-filter></app-contacts-filter>
-	<div>
+	<div class="contacts-main__card-wrapper">
 		<app-contact-card *ngFor="let contact of contacts | async" [contact]="contact"></app-contact-card>
 	</div>
 	<div class="paginator-block">
-		pagination
-		<!-- put your code here -->
+		<ul class="paginator-block__list">
+			<li class="paginator-block__item active" data-attr="1"></li>
+			<li class="paginator-block__item" data-attr="2"></li>
+			<li class="paginator-block__item" data-attr="3"></li>
+			<li class="paginator-block__item" data-attr="4"></li>
+			<li class="paginator-block__item next"></li>
+		</ul>
 	</div>
 </div>

@@ -1,24 +1,24 @@
-<div>
-	<div [ngStyle]="{'background-image':'url('+profilePhotoUrl+')'}">
+<div class="contact-card__wrapper">
+	<div class="contact-card__img" [ngStyle]="{'background-image':'url('+profilePhotoUrl+')'}">
 	</div>
-	<div>
-		<h3>{{ contact.lastName }} {{ contact.firstName }} {{ contact.middleName }}</h3>
-		<div>
-			<div>
+	<div class="contact-card__info">
+		<h3 class="contact-card__info-name">{{ contact.lastName }} {{ contact.firstName }} {{ contact.middleName }}</h3>
+		<div class="contact-card__info-wrapper">
+			<p class="contact-card__info-organization">
 				{{ contact.organization}}
-			</div>
-			<div>
+			</p>
+			<p class="contact-card__info-department">
 				{{ contact.department}}
-			</div>
-			<div>
+			</p>
+			<p class="contact-card__info-position">
 				{{ contact.position}}
-			</div>
-			<div>
+			</p>
+			<p class="contact-card__info-phone">
 				{{ contact.phone}}
-			</div>
-			<div>
+			</p>
+			<p class="contact-card__info-email">
 				{{ contact.email}}
-			</div>
+			</p>
 		</div>
 	</div>
 </div>

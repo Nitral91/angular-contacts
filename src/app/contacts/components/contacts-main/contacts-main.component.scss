@@ -1,11 +1,6 @@
 //import global project variables
 @import "../../../../variables.scss";
 
-.paginator-block {
-  display: inline-flex;
-  background: $colorLightsalmon;
-}
-
 .contacts-main__wrapper {
   display: block;
   margin: 0 auto;
@@ -14,4 +9,79 @@
   border-color: $grey;
   background-color: $white;
   padding: 41px 51px 38px;
+}
+
+.paginator-block__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.paginator-block__item {
+  display: inline-block;
+  position: relative;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  border: 2px #6E767D solid;
+  margin: 0 8px;
+  transition: .2s ease-in-out;
+  &:after {
+    content: attr(data-attr);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: #6E767D;
+    transition: .2s ease-in-out;
+  }
+  &.active {
+    border-color: #ED1C24;
+    &:after {
+      color: #ED1C24;
+    }
+  }
+  &.next {
+    &:after {
+      content: url('../../../../assets/icons/arrow-grey.svg');
+      width: 10px;
+      height: 14px;
+    }
+    &:before {
+      content: url('../../../../assets/icons/arrow-white.svg');
+      width: 10px;
+      height: 14px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      visibility: hidden;
+      transition: .2s ease-in-out;
+    }
+    &:hover, &:focus {
+      &:before {
+        opacity: 1;
+        visibility: visible;
+      }
+      &:after {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+  &:not(.active) {
+    &:hover, &:focus {
+      cursor: pointer;
+      background-color: #6E767D;
+      border: 2px #fff solid;
+      &:after {
+        color: #fff;
+      }
+    }
+  }
 }
