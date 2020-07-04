@@ -1,5 +1,5 @@
 <app-contacts-header></app-contacts-header>
-<div>
+<div class="contacts__wrapper">
 	<app-contacts-filter></app-contacts-filter>
 	<div>
 		<app-contact-card *ngFor="let contact of contacts | async" [contact]="contact"></app-contact-card>

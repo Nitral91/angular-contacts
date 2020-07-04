@@ -1,2 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
 @import 'variables.scss';
+@import 'assets/scss/normalize.scss';
+@import 'assets/scss/fonts.scss';
+
+
+html {
+    background-color: $documentBackground;
+}
