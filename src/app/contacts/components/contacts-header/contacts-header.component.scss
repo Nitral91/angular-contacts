@@ -1,0 +1,22 @@
+.contacts__header-wrapper {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    &:after {
+        content: '';
+        position: absolute;
+        left: 24px;
+        right: 24px;
+        top: calc(100% - 3px);
+        height: 3px;
+        background-color: #D7D7D7;
+    }
+}
+
+.contacts__header-title {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 22px;
+    line-height: 2;
+    font-weight: bold;
+    text-transform: uppercase;
+}
