@@ -5,3 +5,13 @@
   display: inline-flex;
   background: $colorLightsalmon;
 }
+
+.contacts-main__wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 1395px;
+  border: 1px;
+  border-color: $grey;
+  background-color: $white;
+  padding: 41px 51px 38px;
+}

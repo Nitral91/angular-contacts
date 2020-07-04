@@ -3,6 +3,8 @@
 @import 'assets/scss/fonts.scss';
 
 
-html {
-    background-color: $documentBackground;
+body {
+    background-color: $grey;
+    font-size: 12px;
+    box-sizing: border-box;
 }
