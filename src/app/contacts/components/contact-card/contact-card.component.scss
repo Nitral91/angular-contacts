@@ -2,7 +2,6 @@
 
 .contact-card__wrapper {
     display: inline-flex;
-    align-items: center;
     width: 33.33%;
     margin-bottom: 16px;
 
@@ -29,34 +28,30 @@
     font-weight: normal;
     color: $darkBlue;
     letter-spacing: 0.15px;
+    margin: 0 0 10px;
 }
 
 .contact-card__info-organization {
-    font-size: $baseSize;
     color: $lightWhite;
-    margin: 0 0 0.2rem;
+    margin: 0 0 0.25rem;
 }
 
 .contact-card__info-department {
-    font-size: $baseSize;
     color: $lightWhite;
-    margin: 0 0 0.2rem;
+    margin: 0 0 0.25rem;
 }
 
 .contact-card__info-position {
-    font-size: $baseSize;
     color: $lightWhite;
-    margin: 0 0 0.4rem;
+    margin: 0 0 0.5rem;
 }
 
 .contact-card__info-phone {
-    font-size: $baseSize;
     color: $darkBlue;
     margin: 0;
 }
 
 .contact-card__info-email {
-    font-size: $baseSize;
     color: $darkBlue;
     margin: 0;
 }
